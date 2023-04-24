@@ -1,0 +1,8 @@
+.hero_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero_img{
+    width: 20rem;
+}

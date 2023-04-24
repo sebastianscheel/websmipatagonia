@@ -1357,7 +1357,11 @@ section {
   width: 100%;
   position: relative;
   background: var(--color-primary);
-  padding: 60px 0 0 0;
+  padding: 35px 0 0 0;
+  background-image: url(/assets/img/patagonia-argentina.png);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
 }
 
 @media (min-width: 1365px) {
@@ -1398,25 +1402,6 @@ section {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-.hero .btn-watch-video {
-  font-size: 16px;
-  transition: 0.5s;
-  margin-left: 25px;
-  color: #fff;
-  font-weight: 600;
-}
-
-.hero .btn-watch-video i {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 32px;
-  transition: 0.3s;
-  line-height: 0;
-  margin-right: 8px;
-}
-
-.hero .btn-watch-video:hover i {
-  color: #fff;
-}
 
 @media (max-width: 640px) {
   .hero h2 {
