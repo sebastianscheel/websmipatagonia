@@ -226,7 +226,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .topbar {
-  background-image: url(/assets/img/banner_SMI1_1.png);
+  
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -280,7 +280,6 @@ section {
   z-index: 997;
   height: 90px;
   /*background-color: var(--color-primary);*/
-  background-image: url(/assets/img/banner_SMI1.png);
 }
 
 .header.sticked {
@@ -290,6 +289,10 @@ section {
   left: 0;
   height: 70px;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  background-image: url(/assets/img/banner_SMI1.png);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .header .logo img {
