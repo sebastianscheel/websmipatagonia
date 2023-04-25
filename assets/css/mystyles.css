@@ -4,5 +4,13 @@
     align-items: center;
 }
 .hero_img{
+    width: 30rem;
+}
+.div_img__somos{
     width: 25rem;
+    background-color: darkgray;
+    
+}
+.texto_1{
+    text-align: center;
 }
