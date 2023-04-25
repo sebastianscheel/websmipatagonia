@@ -226,7 +226,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .topbar {
-  background: #00796b;
+  background: #3a3738;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -279,7 +279,8 @@ section {
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  background-color: var(--color-primary);
+  /*background-color: var(--color-primary);*/
+  background-image: url(/assets/img/banner_SMI4.png);
 }
 
 .header.sticked {

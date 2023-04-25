@@ -5,6 +5,8 @@
 }
 .hero_img{
     width: 30rem;
+    opacity: 0.8;
+    border-radius: 53px;
 }
 .div_img__somos{
     width: 25rem;
