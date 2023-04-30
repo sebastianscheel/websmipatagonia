@@ -286,16 +286,13 @@ section {
   right: 0;
   left: 0;
   height: 70px;
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
   background-image: url(/assets/img/banner_SMI1.png);
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .header .logo img {
   max-height: 60px;
-  margin-left: 2.2rem;
+  margin-left: 2.7rem;
 }
 
 .header .logo h1 span {
@@ -1253,8 +1250,7 @@ section {
 text-align: left;
 font-weight: bold; 
 font-size: 1.5rem; 
-color: #f9fd00; 
-text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2);
+color: #9c0808; 
 }
 
 .hero .btn-get-started {
