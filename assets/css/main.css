@@ -10,7 +10,7 @@
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: hsl(56, 84%, 45%);
+  --color-primary: hsl(56, 93%, 46%);
   --color-secondary: #a51600;
 }
 
@@ -251,7 +251,7 @@ section {
 @media (max-width: 575px) {
   .topbar .contact-info i a,
   .topbar .contact-info i span {
-    font-size: 13px;
+    display: none;
   }
 }
 
@@ -580,7 +580,7 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0, 106, 93, 0.8);
+    background: rgba(148, 150, 139, 0.8);
     z-index: 9996;
   }
 }
@@ -637,9 +637,15 @@ section {
 
 .services .service-item {
   padding: 40px;
-  background: #fff;
+  background-image: url(/assets/img/23.png);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
   height: 100%;
   border-radius: 10px;
+  border: solid rgb(0, 0, 0) 0.3rem;
+  background-color: grey;
 }
 
 .services .service-item .icon {
@@ -684,8 +690,9 @@ section {
 
 .services .service-item p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 1rem;
   margin-bottom: 0;
+  font-weight: 600;
 }
 
 .services .service-item .readmore {
@@ -699,378 +706,14 @@ section {
 }
 
 .services .service-item:hover h3 {
-  border-color: var(--color-primary);
-}
-
-/*--------------------------------------------------------------
-# Testimonials Section
---------------------------------------------------------------*/
-.testimonials .testimonial-wrap {
-  padding-left: 10px;
-}
-
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  padding: 30px;
-  margin: 30px 10px;
-  box-shadow: 0px 0 15px rgba(0, 0, 0, 0.1);
-  position: relative;
-  background: #fff;
-  border-radius: 10px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50px;
-  margin-right: 15px;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #000;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0;
-}
-
-.testimonials .testimonial-item .stars {
-  margin: 10px 0;
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
-}
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: #009d8b;
-  font-size: 26px;
-  line-height: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 15px auto 15px auto;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
-}
-
-@media (max-width: 767px) {
-  .testimonials .testimonial-wrap {
-    padding-left: 0;
-  }
-
-  .testimonials .testimonial-item {
-    padding: 30px;
-    margin: 15px;
-  }
-
-  .testimonials .testimonial-item .testimonial-img {
-    position: static;
-    left: auto;
-  }
-}
-
-/*--------------------------------------------------------------
-# Portfolio Section
---------------------------------------------------------------*/
-.portfolio .portfolio-flters {
-  padding: 0 0 20px 0;
-  margin: 0 auto;
-  list-style: none;
-  text-align: center;
-}
-
-.portfolio .portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 10px;
-  line-height: 1;
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio .portfolio-flters li:hover,
-.portfolio .portfolio-flters li.filter-active {
-  color: var(--color-primary);
-}
-
-.portfolio .portfolio-flters li:first-child {
-  margin-left: 0;
-}
-
-.portfolio .portfolio-flters li:last-child {
-  margin-right: 0;
-}
-
-@media (max-width: 575px) {
-  .portfolio .portfolio-flters li {
-    font-size: 14px;
-    margin: 0 5px;
-  }
-}
-
-.portfolio .portfolio-wrap {
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  height: 100%;
-  overflow: hidden;
-}
-
-.portfolio .portfolio-wrap img {
-  transition: 0.3s;
-  position: relative;
-  z-index: 1;
-}
-
-.portfolio .portfolio-wrap .portfolio-info {
-  padding: 25px 20px;
-  background-color: #fff;
-  position: relative;
-  border-top: 1px solid #f3f3f3;
-  z-index: 2;
-}
-
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 18px;
-  font-weight: 600;
-  padding-right: 50px;
-}
-
-.portfolio .portfolio-wrap .portfolio-info h4 a {
-  color: var(--color-default);
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-info h4 a:hover {
-  color: var(--color-primary);
-}
-
-.portfolio .portfolio-wrap .portfolio-info p {
-  color: #6c757d;
-  font-size: 14px;
-  margin-bottom: 0;
-  padding-right: 50px;
-}
-
-.portfolio .portfolio-wrap:hover img {
-  transform: scale(1.1);
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details Section
---------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(255, 255, 255, 0.7);
-  opacity: 1;
-}
-
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
-}
-
-.portfolio-details .swiper-button-prev,
-.portfolio-details .swiper-button-next {
-  width: 48px;
-  height: 48px;
-}
-
-.portfolio-details .swiper-button-prev:after,
-.portfolio-details .swiper-button-next:after {
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(0, 0, 0, 0.2);
-  font-size: 24px;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-}
-
-.portfolio-details .swiper-button-prev:hover:after,
-.portfolio-details .swiper-button-next:hover:after {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-@media (max-width: 575px) {
-  .portfolio-details .swiper-button-prev,
-  .portfolio-details .swiper-button-next {
-    display: none;
-  }
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-info h3:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--color-primary);
-  left: 0;
-  bottom: 0;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 15px;
-  font-size: 16px;
-}
-
-.portfolio-details .portfolio-info ul strong {
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #9c9c9c;
-  font-size: 12px;
-}
-
-.portfolio-details .portfolio-info .btn-visit {
-  padding: 8px 40px;
-  background: var(--color-primary);
-  color: #fff;
-  border-radius: 50px;
-  transition: 0.3s;
-}
-
-.portfolio-details .portfolio-info .btn-visit:hover {
-  background: #009d8b;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-.portfolio-details .portfolio-description .testimonial-item {
-  padding: 30px 30px 0 30px;
-  position: relative;
-  background: white;
-  height: 100%;
-  margin-bottom: 50px;
-}
-
-.portfolio-details .portfolio-description .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50px;
-  border: 6px solid #fff;
-  float: left;
-  margin: 0 10px 0 0;
-}
-
-.portfolio-details .portfolio-description .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 15px 0 5px 0;
-  padding-top: 20px;
-}
-
-.portfolio-details .portfolio-description .testimonial-item h4 {
-  font-size: 14px;
-  color: #6c757d;
-  margin: 0;
-}
-
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
-  color: #009d8b;
-  font-size: 26px;
-  line-height: 0;
-}
-
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
-}
-
-.portfolio-details .portfolio-description .testimonial-item p {
-  font-style: italic;
-  margin: 0 0 15px 0 0 0;
-  padding: 0;
+  border-color: var(--color-secondary);
 }
 
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-container {
-  background-color: var(--color-primary);
+  background-color:#ffee00;
   height: 100%;
   padding: 20px;
   border-radius: 10px 0 0 10px;
@@ -1079,7 +722,7 @@ section {
 
 .contact .info-item {
   width: 100%;
-  background-color: #009282;
+  background-color: #000000bd;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -1119,7 +762,7 @@ section {
 }
 
 .contact .info-item:hover i {
-  background: #fff;
+  background: #fffb00;
   color: var(--color-primary);
 }
 
@@ -1152,7 +795,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #059652;
+  background: #007400;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1210,7 +853,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: rgba(0, 131, 116, 0.8);
+  background:rgb(2, 128, 2);
 }
 
 @keyframes animate-loading {
@@ -1231,7 +874,7 @@ section {
   position: relative;
   background: var(--color-primary);
   padding: 55px 0 35px 0;
-  background-image: url(/assets/img/patagonia-argentina5.png);
+  background-image: url(/assets/img/patagonia-argentina2.png);
   background-size: cover;
   background-repeat: no-repeat;  
   background-position: center center;
@@ -1245,11 +888,22 @@ section {
 }
 
 .hero h2 {
-  font-size: 48px;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 20px;
   color: #fff;
   text-align: center;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,"AppleGothic", sans-serif;
+  font-size: 3.7rem;
+  padding: 40px 20px;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: #d1c414;
+  letter-spacing: 0.1em;
+  text-shadow: 0 -1px 0 #fff, 0 0.5px 0 #2e2e2e, 0 1px 0 #2c2c2c, 0 1.5px 0 #2a2a2a,
+    0 2px 0 #282828, 0 2.5px 0 #262626, 0 3px 0 #242424, 0 3.5px 0 #222,
+    0 4px 0 #202020, 0 4.5px 0 #1e1e1e, 0 6px 0 #1c1c1c, 0 6.5px 0 #1a1a1a,
+    0 7px 0 #181818, 0 7.5px 0 #161616, 0 8px 0 #141414, 0 8.5px 0 #121212,
+    0 9px 5px rgba(0, 0, 0, 0.9);
 }
 
 .hero p {
@@ -1279,9 +933,9 @@ color: #ffffff;
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1279px) {
   .hero h2 {
-    font-size: 36px;
+    font-size: 3rem;
   }
 
   .hero .btn-get-started,
@@ -1348,6 +1002,17 @@ color: #ffffff;
 .hero .icon-box:hover .title a,
 .hero .icon-box:hover .icon {
   color: #fff;
+}
+@media (max-width: 719px) {
+  .hero h2 {
+    font-size: 2.5rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .hero p{
+  text-align: center;
+  margin-top: 0;
+  }
 }
 
 /*--------------------------------------------------------------
