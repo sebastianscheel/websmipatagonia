@@ -36,7 +36,18 @@
   justify-content: center;
 }
 .section-div--p1{
-  font-size: 1.2rem; 
+  font-size: 1.6rem;
+  font: bold; 
+}
+.section-div--p{
+  font-size: 1.2rem;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .section-div--p{
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 .contenedor-img img {
   position: absolute;
