@@ -152,10 +152,10 @@ document.addEventListener('DOMContentLoaded', () => {
    * Clients Slider
    */
   new Swiper('.clients-slider', {
-    speed: 400,
+    speed: 2800,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 1000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
