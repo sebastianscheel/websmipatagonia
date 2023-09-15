@@ -238,7 +238,7 @@ section {
   top: 0;
   right: 0;
   left: 0;
-  background-image: url(../img/banner_SMI1.png);
+  background-image: url(../img/banner_SMI1.webp);
   background-size:auto;
   background-repeat: no-repeat;
 }
@@ -606,7 +606,7 @@ section {
 
 .services .service-item {
   padding: 40px;
-  background-image: url(../img/23.png);
+  background-image: url(../img/23.webp);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -843,7 +843,7 @@ section {
   position: relative;
   background: var(--color-primary);
   padding: 55px 0 35px 0;
-  background-image: url(/assets/img/foto2.webp);
+  background-image: url(../img/foto2.webp);
   background-size: cover;
   background-repeat: no-repeat;  
   background-position: center center;
