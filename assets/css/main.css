@@ -478,21 +478,7 @@ section {
     background: rgba(0, 131, 116, 0.8);
   }
 
-  .navbar .dropdown ul,
-  .navbar .dropdown .dropdown ul {
-    position: static;
-    display: none;
-    padding: 10px 0;
-    margin: 10px 20px;
-    transition: all 0.5s ease-in-out;
-    background-color: #007466;
-    border: 1px solid #006459;
-  }
 
-  .navbar .dropdown > .dropdown-active,
-  .navbar .dropdown .dropdown > .dropdown-active {
-    display: block;
-  }
 
   .mobile-nav-show {
     color: rgba(255, 255, 255, 0.6);

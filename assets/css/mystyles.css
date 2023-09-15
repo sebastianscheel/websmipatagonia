@@ -80,6 +80,31 @@
   width:100%;
   transition:800ms ease all;
 }
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#ffffff;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+  margin-bottom: 150px;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#ffffff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
 @media screen and (max-width: 768px) {
   .section-div--p{
     font-size: 1rem;
