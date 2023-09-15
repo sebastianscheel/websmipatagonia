@@ -85,4 +85,16 @@
     font-size: 1rem;
     text-align: center;
   }
+  .topbar{
+    display: none!important;
+  }
+  .section-div--card2 {
+    text-align: center;
+  }
+  .about .content ul i {
+    position: relative;
+  }
+  .logosmi{
+    justify-content: center!important;
+  }
 }

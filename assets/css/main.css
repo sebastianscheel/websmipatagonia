@@ -1302,7 +1302,7 @@ color: #ffffff;
   border: 3px solid rgba(255, 255, 255, 0.2);
   font-size: 25px;
   color: rgba(255, 255, 255, 0.7);
-  margin-right: 2rem;
+  margin: 1rem;
   transition: 0.3s;
 }
 
