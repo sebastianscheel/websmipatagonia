@@ -4,8 +4,8 @@
   align-items: center;
 }
 .img-fluid2{
-  width: 110px;
-  height: 45px;
+  width: 93px;
+  height: 35px;
 }
 .div_header--img {
   width: 100%;
@@ -44,7 +44,7 @@
   font-size: 1.2rem;
   text-align: center;
 }
-button{
+.button1{
   background:#dacb00;
   color:#fff;
   border:none;
@@ -56,11 +56,11 @@ button{
   transition:800ms ease all;
   outline:none;
 }
-button:hover{
+.button1:hover{
   background:#000000d7;
   color:#ffffff;
 }
-button:before,button:after{
+.button1:before,.button1:after{
   content:'';
   position:absolute;
   top:0;
@@ -70,13 +70,13 @@ button:before,button:after{
   background: #ffe602;
   transition:400ms ease all;
 }
-button:after{
+.button1:after{
   right:inherit;
   top:inherit;
   left:0;
   bottom:0;
 }
-button:hover:before,button:hover:after{
+.button1:hover:before,.button1:hover:after{
   width:100%;
   transition:800ms ease all;
 }
