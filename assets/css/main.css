@@ -1059,12 +1059,12 @@ color: #ffffff;
   position: relative;
   border-top: 1px solid #f3f3f3;
   z-index: 2;
+  text-align: center;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 18px;
   font-weight: 600;
-  padding-right: 50px;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 a {
